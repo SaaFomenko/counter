@@ -43,8 +43,8 @@ Counter objInit()
       
 				check = true; 
 			}
-			while (check);
 		}
+		while (check);
 	}
 	else
 	{
