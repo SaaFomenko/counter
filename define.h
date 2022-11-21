@@ -1,23 +1,36 @@
+#include <string>
+
+
 class Counter
 {
 	private:
+//		static int count;
 		int count;
 	public:
 		Counter(int start = 1);
-
+		void inc();
+		void dec();
+		int view();
 };
 
 struct lable
 {
-  static const char* num1;
-	static const char* num2;
+  static const std::string start;
+	static const std::string start_val;
+	static const std::string cmd;
+	static const std::string quit;
+	static const std::string err_val;
+	static const std::string err_cmd;
 };
 
-enum nvar
+enum cmd
 {
-	num1,
-	num2
+	quit,
+	start,
+	inc,
+	dec,
+	view
 };
 
-void initObj(Name* obj, nvar num_id);
-void outObj(Name* obj);
+Counter objInit();
+void inOut(Counter* obj, cmd* oper);

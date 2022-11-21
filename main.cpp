@@ -3,12 +3,13 @@
 
 
 int main() {
-	Name obj;
+	Counter obj = objInit();
 
-	while(true)
+	cmd oper = cmd::start;
+
+	while(oper)
 	{
-		initObj(&obj, nvar::num1);
-		outObj(&obj);
+		inOut(&obj, &oper);
 	}
  
   return 0;

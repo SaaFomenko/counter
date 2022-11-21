@@ -1,3 +1,3 @@
 all:
-	gcc main.cpp obj.cpp initobj.cpp outobj.cpp -lstdc++ -o main.out
+	gcc main.cpp counter.cpp objinit.cpp inout.cpp -lstdc++ -o main.out
 
