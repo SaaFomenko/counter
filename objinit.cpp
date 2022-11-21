@@ -26,6 +26,7 @@ Counter objInit()
 
 	if (resp == quests[cmd::start])
 	{
+		bool check = false;
 		do
 		{
 			std::cout << lable::start_val;
@@ -40,7 +41,7 @@ Counter objInit()
 			{
 				std::cout << lable::err_val << std::endl;
       
-				return *defObj(); 
+				check = true; 
 			}
 			while (check);
 		}
