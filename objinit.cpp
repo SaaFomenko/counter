@@ -6,9 +6,9 @@ const std::string lable::start = "Вы хотите указать началь�
 const std::string lable::start_val = "Введите начальное значение счётчика: ";
 const std::string lable::err_val = "Введено невеное значение счетчика. Пожалуйста введите целое число.";
 
-Counter* defObj()
+Counter defObj()
 {
-	Counter* obj = new Counter();
+	Counter obj = Counter();
 
 	return obj;
 }
@@ -33,22 +33,23 @@ Counter objInit()
 			std::cin >> resp;
 			try {
 				int start_val = std::stoi(resp);
-				Counter* obj = new Counter(start_val);
+				Counter obj = Counter(start_val);
       
-				return *obj;	
+				return obj;	
 			}
 			catch(std::invalid_argument e)
 			{
 				std::cout << lable::err_val << std::endl;
       
 				check = true; 
+				return Counter();
 			}
 		}
 		while (check);
 	}
 	else
 	{
-		return *defObj();
+		return defObj();
 	}
 }
 
