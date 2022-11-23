@@ -14,7 +14,7 @@ char firstCharInStr(std::string* s)
 	return arr[0];
 }
 
-void inOut(Counter* obj, cmd* oper)
+void inOut(Counter& obj, cmd* oper)
 {
 	std::string in_user = "";
 	bool check = false;
@@ -31,19 +31,19 @@ void inOut(Counter* obj, cmd* oper)
 		{
 			if (cmd == '+')
 			{
-				obj->inc();
+				obj.inc();
 				*oper = cmd::inc;
 				check = false;
 			}
 			if (cmd == '-')
 			{
-				obj->dec();
+				obj.dec();
 				*oper = cmd::dec;
 				check = false;	
 			}
 			if (cmd == '=')
 			{
-				int count = obj->view();
+				int count = obj.view();
 				std::cout << count << std::endl;
 				*oper = cmd::view;
 				check = false;

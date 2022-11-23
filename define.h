@@ -4,7 +4,6 @@
 class Counter
 {
 	private:
-//		static int count;
 		int count;
 	public:
 		Counter(int start = 1);
@@ -32,5 +31,4 @@ enum cmd
 	view
 };
 
-Counter objInit();
-void inOut(Counter* obj, cmd* oper);
+void inOut(Counter& obj, cmd* oper);
