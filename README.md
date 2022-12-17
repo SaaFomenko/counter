@@ -1,6 +1,4 @@
 # counter
-Demo for class Counter.
+Demo for class Counter in many files project.
 
-## Example working with class
-C++ OOP project, with user enter checking.
-Condition you see this [link](https://github.com/netology-code/cppm-homeworks/tree/main/03/02)
+Condition you see this [link](https://github.com/netology-code/cppm-homeworks/tree/main/06/02)

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "define.h"
+#include "inout.h"
 
 
 const std::string lable::cmd = "Введите команду ('+', '-', '=' или 'x'): ";

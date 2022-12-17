@@ -1,5 +1,6 @@
 #include <iostream>
-#include "define.h"
+#include "counter.h"
+#include "inout.h"
 
 
 const std::string lable::start = "Вы хотите указать начальное значение счётчика? Введите да или нет: ";

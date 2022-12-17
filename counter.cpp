@@ -1,21 +1,22 @@
-#include "define.h"
+#include "counter.h"
 
-Counter::Counter(int start)
-{
-	this->count = start;
-}
+Counter::Counter() : count(1)
+{}
+
+Counter::Counter(int start) : count(start)
+{}
 
 void Counter::inc()
 {
-	++this->count;
+	++count;
 }
 
 void Counter::dec()
 {
-	--this->count;
+	--count;
 }
 
 int Counter::view()
 {
-	return this->count;
+	return count;
 }
